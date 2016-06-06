@@ -1,0 +1,8 @@
+keytool -import -trustcacerts -keystore cacerts -storepass changeit -noprompt -alias b2b.cer -file /usr/share/ca-certificates/*.cer
+
+keytool -import -alias sunas -keystore /opt/jdk1.6/jre/lib/security/cacerts -file /home/gugrim/tmp/sunas.der
+
+/usr/lib/jvm/java-6-sun/jre/lib/security
+
+
+keytool -delete -noprompt -alias b2b.cer  -keystore cacerts -storepass changeit
